@@ -4,7 +4,7 @@ import '../../frontend/style.css';
 const Home = () => {
 return (
 <div>
-  <section class="section1" id="slider">
+  <section class="section1" id="home">
     <div class="container-fluid p-0">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
@@ -50,7 +50,7 @@ return (
       </div>
     </div>
   </section>
-  <section class="section2">
+  <section class="section2" id="donate">
     <div className="container">
       <div className="donate">
         <h1 className="fw-bold text-center">Donate Today</h1>
@@ -82,7 +82,7 @@ return (
     </div>
     
   </section>
-  <section class="section3">
+  <section class="section3" id="plan">
     <div className="container">
       <div class="plan-heading">
       <h1 className="text-center fw-bold">Our Donation Plan</h1>
@@ -140,7 +140,7 @@ return (
     </div>
     </div>
   </section>
-  <section class="done container-fluid">
+  <section class="done container-fluid" id="success">
     <div className="done-elements">
       <div class="done-heading">
         <h1 className="fw-bold text-center">What we have done</h1>
@@ -176,7 +176,54 @@ return (
       
     </div>
   </section>
-  <section class="section4">
+
+  <section className="gallary container" id="gallary">
+    <div className="Gallary-elements">
+      <div class="Gallary-heading">
+        <h1 className="fw-bold text-center">Gallary</h1>
+      </div>
+      <div class="Gallary-details">
+        <p className="text-center">The moments</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/donation1.jpg" alt="Image 1"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation2.jpg" alt="Image 2"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation3.jpg" alt="Image 3"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation4.jpg" alt="Image 4"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation6.jpg" alt="Image 5"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation7.jpg" alt="Image 6"/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation8.jpg" alt=""/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation9.jpg" alt=""/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation10.jpg" alt=""/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation13.jpg" alt=""/>
+        </div>
+        <div class="gallery-item">
+            <img src="images/donation14.webp" alt=""/>
+        </div>
+    </div>
+  </section>
+ {/* <section class="section4">
     <div class="need-heading">
       <h1>They need us
       to surive</h1>
@@ -212,7 +259,7 @@ return (
     </div>
     
     
-  </section>
+  </section>*/}
   
   <section class="section5">
     <div class="update-heading">
@@ -228,23 +275,23 @@ return (
     </div>
   </section>
 
-    <section class="section6 pt-5">
+    <section class="section6" id="faq">
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <div class="qs-elements d-flex justify-content-center align-items-center flex-column text-center pb-4">
         <h1 class="fw-bold">Frequently Asked Questions</h1>
-        <p class="text-secondary">The frequently asked questions<br/> by students.</p>
+        <p class="text-secondary">The frequently asked questions by the people.</p>
       </div>
       <div class="qs d-flex justify-content-center w-50">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What is the difference between flex and grid?
+            What is Easy Donate?
             </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                 <p class="text-secondary">Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</p>
+                 <p class="text-secondary"><span className="fw-bold"> Easy Donate </span> is a platform dedicated to facilitating donations and support for flood victims. We connect donors with organizations and individuals in need to provide relief during and after flood disasters.</p>
                 
               </div>
             </div>
@@ -252,36 +299,48 @@ return (
           <div class="accordion-item my-2 border">
             <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            What is Semantic tag?
+             How can I donate through Easy Donate?
             </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="text-secondary">The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.</p>
+                <p class="text-secondary">Donating through <span className="fw-bold"> Easy Donate </span> is simple. Just visit our homepage and browse the current flood relief campaigns. Choose the campaign you'd like to support and click on the "Donate Now" button. You can make a one-time donation or set up a recurring donation, depending on your preference.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item my-2 border">
             <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            What is css box model?
+            Is my donation secure on Easy Donate?
             </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="text-secondary">In web development, the CSS box model refers to how HTML elements are modeled in browser engines and how the dimensions of those HTML elements are derived from CSS properties. It is a fundamental concept for the composition of HTML webpages.</p>
+                <p class="text-secondary">Yes, we take security seriously. We use encryption and secure payment processors to protect your financial information. Your donation goes directly to the intended recipients and is transparently tracked.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item my-2 border">
             <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            What is the difference between bootstrap and tailwind?
+             Are my donations tax-deductible?
             </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="text-secondary">The main difference between TailwindCSS and Bootstrap is that Tailwind CSS is not a UI kit. Unlike UI kits such as Bootstrap, Bulma, and Foundation, Tailwind CSS doesn't have a default theme or built-in UI components. Instead, it comes with predesigned widgets you can use to build your site from scratch.</p>
+                <p class="text-secondary">Many donations through <span className="fw-bold"> Easy Donate </span> are tax-deductible, but it depends on the specific campaign and organization you're supporting. Check the campaign details for information on tax deductibility, and consult your tax advisor for guidance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item my-2 border">
+            <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Can I donate goods or services instead of money?
+            </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="text-secondary">In some cases, you may have the option to donate goods or services. Check the campaign details to see if this is available. Be aware that monetary donations are often more flexible and can be allocated where needed most.</p>
               </div>
             </div>
           </div>
@@ -289,6 +348,67 @@ return (
       </div>
     </div>
   </section>
+
+
+<section class="section7" id="contact">
+    <div class="container">
+     <div className="contact-elements text-light">
+      <div class="contact-heading">
+        <h1 className="fw-bold text-center">Contact</h1>
+      </div>
+      <div class="contact-details">
+        <p className="text-center">Please contact us using this form below.</p>
+      </div>
+    </div>
+          <div id="contact" class="contact-main container-fluid py-lg-5 py-sm-0">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            
+            <div class="contact-details py-lg-3 py-sm-0">
+              <p class="text-left text-white">Thank you for your interest in <span className="fw-bold">Easy Donate</span>.</p>
+            </div>
+            <div class="cborder"></div>
+            <div class="contact-address py-5">
+              <span><i class="fa-solid fa-location-dot"></i><p>241 CDBFER,FGHRRTRG,THGF</p></span>
+              <span><i class="fa-solid fa-phone"></i><p>+001122334455</p></span>
+              <span><i class="fa-solid fa-envelope"></i><p>ABCD@gmail.com</p></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+            <div class="cborder"></div>
+            <div class="contact-form py-lg-5 py-sm-2">
+              <form>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Name"/>
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <input type="email" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <input type="text" class="form-control mt-3" id="exampleInputPassword1" placeholder="Subject"/>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                </div>
+                
+                <button type="submit" class="mt-3 btn3 btn btn-primary font-weight-bold">Submit</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
   
 </div>
 )
