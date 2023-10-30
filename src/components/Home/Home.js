@@ -85,7 +85,7 @@ return (
   <section class="section3" id="plan">
     <div className="container">
       <div class="plan-heading">
-      <h1 className="text-center fw-bold">Our Donation Plan</h1>
+      <h1 className="text-center fw-bold">Our Plan</h1>
     </div>
     <div class="plan-details">
       <p>We want to help them as fast as it is possible that's we are raising funds.<br/><span>
@@ -177,12 +177,12 @@ return (
     </div>
   </section>
 
-  <section className="gallary container" id="gallary">
-    <div className="Gallary-elements">
-      <div class="Gallary-heading">
+  <section className="gallary container pb-4" id="gallary">
+    <div className="gallary-elements">
+      <div class="gallary-heading">
         <h1 className="fw-bold text-center">Gallary</h1>
       </div>
-      <div class="Gallary-details">
+      <div class="gallary-details">
         <p className="text-center">The moments</p>
       </div>
     </div>
@@ -223,57 +223,36 @@ return (
         </div>
     </div>
   </section>
- {/* <section class="section4">
-    <div class="need-heading">
-      <h1>They need us
-      to surive</h1>
-    </div>
-    <div class="need-divider">
-      <div class="need-accessories">
-        <div class="need">
-          <img src="images/donation1.jpg"/>
-        </div>
-        <div class="need-details">
-          <p>Your small support could help them a lot.<br/><span>
-          Remember that people need support in the days, months, and even years following natural disasters.</span></p>
-        </div>
+
+  <section className="about container" id="about">
+    <div className="about-elements">
+      <div class="about-heading">
+        <h1 className="fw-bold text-center">About Us</h1>
       </div>
-      <div class="donate1">
-        <a class="button1" href="">Donate Now</a>
+      <div class="about-details">
+        <p className="text-center">Know what we do</p>
       </div>
     </div>
-    <div class="need-divider">
-      
-      <div class="donate1">
-        <a class="button1" href="">Donate Now</a>
-      </div>
-      <div class="need-accessories">
-        <div class="need">
-          <img src="images/donation2.jpg"/>
+
+    <div class="card mb-3 border-0">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-4 ">
+            <img src="images/logo.png" class="img-fluid h-100 rounded-start" alt="..."/>
+          </div>
+          <div class="col-md-6  col-lg-8 py-5 px-4">
+            <div class="card-body py-5 px-4">
+              <p class="ellipsis card-text text-secondary">At <span className="fw-bold">Easy Donate</span>, we are dedicated to making a positive impact in the face of disaster. Our mission is to provide relief and support to communities affected by devastating floods. We understand the immense challenges and hardships that flood victims endure, and we believe in the power of collective action to bring about change.</p>
+              <p class="ellipsis card-text text-secondary"><span className="fw-bold">Easy Donate</span> was founded by a group of passionate individuals who wanted to make a difference in the lives of those affected by floods. Inspired by the spirit of compassion and unity, we embarked on a journey to create a platform that could harness the generosity of people from all walks of life to help those in need.</p>
+              <p class="ellipsis card-text text-secondary">Our platform serves as a bridge between donors and flood-affected communities. We facilitate the collection of donations, both monetary and in-kind, and ensure that they reach the hands of those who need them the most. We partner with established relief organizations and local authorities to ensure efficient and transparent distribution of aid.</p>
+              <p class="ellipsis card-text text-secondary">Floods are among the most devastating natural disasters, affecting millions of people worldwide. We believe that everyone deserves a helping hand during their most challenging times. By donating through <span className="fw-bold">Easy Donate</span>, you become a part of a larger effort to provide hope and support to flood victims. Together, we can make a significant impact and help these communities recover and rebuild.</p>
+              
+            </div>
+          </div>
         </div>
-        <div class="need-details">
-          <p>Be a good listener and remember that sometimes its best to just listen and not offer your own opinions or<br/><span>
-          solutions without being asked for them.</span></p>
-        </div>
       </div>
-    </div>
-    
-    
-  </section>*/}
+    </section>
+
   
-  <section class="section5">
-    <div class="update-heading">
-      <h1>Get Our Updates</h1>
-    </div>
-    <div class="update-details">
-      <p>You can contact us by mail,if you want to help those affected people<br/><span>with your ideas and other things.
-      </span></p>
-    </div>
-    <div class="input1">
-      <input type="text" name="" placeholder="  Email"/>
-      <a href="">Subscribe</a>
-    </div>
-  </section>
 
     <section class="section6" id="faq">
     <div class="container d-flex justify-content-center align-items-center flex-column">
@@ -370,7 +349,7 @@ return (
             </div>
             <div class="cborder"></div>
             <div class="contact-address py-5">
-              <span><i class="fa-solid fa-location-dot"></i><p>241 CDBFER,FGHRRTRG,THGF</p></span>
+              <span><i class="fa-solid fa-location-dot"></i><p>241 CDBFER,FGHRRTRG</p></span>
               <span><i class="fa-solid fa-phone"></i><p>+001122334455</p></span>
               <span><i class="fa-solid fa-envelope"></i><p>ABCD@gmail.com</p></span>
             </div>

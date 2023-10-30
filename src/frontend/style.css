@@ -4,6 +4,7 @@
 	scroll-behavior: smooth;
 }
 
+
 .section1 .container-fluid .carousel-item:before{
 
 	content:"";
@@ -174,6 +175,15 @@ padding: 0px 130px 0px 130px;
 /*	margin: 20px 20px 20px 20px;*/
 	border-radius: 5px;
 }
+
+.section3 .container .row .col-md-4{
+  position: relative;
+  overflow: hidden;
+}
+.section3 .container .row .col-md-4:hover{
+		  transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 #food{
 	background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(210,139,139,1) 0%, rgba(255,198,198,1) 100%);
@@ -186,7 +196,6 @@ background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(210,139,139,1) 0
 	background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(210,139,139,1) 0%, rgba(255,198,198,1) 100%);
 }
-
 .section5 .input1{
 background: rgb(238,174,202);
 background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -277,6 +286,13 @@ color: #707070;
   height: 120px;
   width: 180px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.boxes div:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 
@@ -291,7 +307,14 @@ color: #707070;
     gap: 20px;
 }
 
-/* Style for individual gallery items */
+.gallary-details{
+	padding:24px 0px 24px 0px;
+}
+.gallary-heading h1{
+	font-size: 48px;
+}
+
+
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -310,6 +333,14 @@ color: #707070;
 .gallery-item:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+
+.about-heading h1{
+	font-size: 45px;
+}
+.about-details{
+	padding:24px 0px 24px 0px;
 }
 
 
@@ -332,7 +363,6 @@ padding-bottom: 120px;
 }
 
 .section7{
-/*	background-image:url("/public/images/bg.jpg");*/
 background: rgb(238,174,202);
 background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 	background-position:center center;
@@ -446,3 +476,259 @@ footer p{
 	padding: 5px;
 	color: white;
 }
+
+
+
+
+
+@media only screen and (max-width: 320px){
+	.navbar .container-fluid{
+		padding: 0px!important;
+	}
+
+	.section1{
+		margin-top: 60px;
+	}
+	.section1 .carousel-caption{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column!important;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 0px!important;
+		font-size: 10px;
+		margin-top: -300px;
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 8px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+	.section1 .carousel-item img{
+		height: 200px!important;
+		width: 100%!important;
+	}
+	.section2 .donate h1 {
+		margin-top: 0px!important;
+	}
+	.donate-details p {
+		padding: 0px!important;
+	}
+	.block{
+		display: inline;
+	}
+	
+	.section2 .block{
+		padding: 0px!important;
+	}
+	.block div{
+		margin: 15px!important;
+		width: inherit!important;
+		height: inherit!important;
+	}
+	.section2 .form{
+		margin-bottom: 0px!important;
+		padding: 0px!important;
+
+	}
+.section2 .form input{
+	width: 100%;
+}
+
+
+	.section3 .plan-details {
+		padding: 0px!important;
+	}
+	.plans div{
+		padding: 10px!important;
+	} 
+	.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width: 320px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+		margin: 0px!important;
+	}
+	.done .done-accessories .boxes{
+		display: flex;
+		flex-direction: column!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+
+	.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallary-elements .gallary-details{
+  	padding: 0px!important;
+  }
+	.about .about-details{
+		padding: 0!important;
+	}
+	.about .card .card-body{
+		padding-right: 0!important;
+		padding-left: 0!important;
+	}
+	.about .card .row .col-md-6{
+		padding: 0px!important;
+	}
+	.about .card .row .col-md-6 img{
+		border-radius: 0!important;
+	}
+
+
+
+	.contact-main .contact-form .btn3 {
+		width: 35%;
+	}
+	.contact-form input{
+		width: 100%;
+	}
+}
+
+	@media only screen and (max-width: 375px) and (min-width: 321px){
+			.section1{
+		margin-top: 60px;
+	}
+
+			.section1 .carousel-caption{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column!important;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 15px;
+		margin-top: -300px;
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 10px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+	.section1 .carousel-item img{
+		height: 100%!important;
+		width: 100%!important;
+	}
+
+		.section2 .donate h1 {
+		margin-top: 0px!important;
+	}
+	.donate-details p {
+		padding: 0px!important;
+	}
+	.block{
+		display: inline;
+	}
+	
+	.section2 .block{
+		padding: 0px!important;
+	}
+	.block div{
+		margin: 15px!important;
+		width: inherit!important;
+		height: inherit!important;
+	}
+	.section2 .form{
+		margin-bottom: 0px!important;
+		padding: 0px!important;
+
+	}
+.section2 .form input{
+	width: 100%;
+}
+
+	.section3 .plan-details {
+		padding: 0px!important;
+	}
+	.plans div{
+		padding: 10px!important;
+	} 
+
+		.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width: 380px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+		margin: 0px!important;
+	}
+	.done .done-accessories .boxes{
+		display: flex;
+		flex-direction: column!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+
+			.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)!important;
+  }
+   .gallary-elements .gallary-details{
+  	padding: 0px!important;
+  }
+
+  	.about .about-details{
+		padding: 0!important;
+	}
+	.about .card .card-body{
+		padding-right: 0!important;
+		padding-left: 0!important;
+	}
+	.about .card .row .col-md-6{
+		padding: 0px!important;
+	}
+	.about .card .row .col-md-6 img{
+		border-radius: 0!important;
+	}
+
+
+
+	}
