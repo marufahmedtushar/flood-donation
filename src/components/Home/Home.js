@@ -4,6 +4,7 @@ import '../../frontend/style.css';
 const Home = () => {
 return (
 <div>
+  {/*Home Section*/}
   <section class="section1" id="home">
     <div class="container-fluid p-0">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
@@ -14,7 +15,7 @@ return (
             <div class="carousel-caption d-md-block d-flex justify-content-center align-items-center px-5">
               <h1 class="text-center">Let’s Help Those Who Are More In Need</h1>
               <p class="text-center">Due to excessive rainfall, when rivers and canals overflow their banks and make a huge loss to crops and property, flood occurs and it is a great devil for us in Bangladesh.</p>
-              <a href="" class="button btn text-light py-3 px-5">Get Started</a>
+              <a href="#donate" class="button btn text-light py-3 px-5">Donte Now</a>
             </div>
           </div>
           
@@ -24,7 +25,7 @@ return (
             <div class="carousel-caption d-md-block d-flex justify-content-center align-items-center px-5">
               <h1 class="text-center">Let’s Help Those Who Are More In Need</h1>
               <p class="text-center">Due to excessive rainfall, when rivers and canals overflow their banks and make a huge loss to crops and property, flood occurs and it is a great devil for us in Bangladesh.</p>
-              <a href="" class="button btn text-light py-3 px-5">Get Started</a>
+              <a href="#donate" class=" new-btn btn text-light py-3 px-5">Donte Now</a>
             </div>
           </div>
           
@@ -34,7 +35,7 @@ return (
             <div class="carousel-caption d-md-block d-flex justify-content-center align-items-center px-5">
               <h1 class="text-center">Let’s Help Those Who Are More In Need</h1>
               <p class="text-center">Due to excessive rainfall, when rivers and canals overflow their banks and make a huge loss to crops and property, flood occurs and it is a great devil for us in Bangladesh.</p>
-              <a href="" class="button btn text-light py-3 px-5">Get Started</a>
+              <a href="#donate" class="button btn text-light py-3 px-5">Donte Now</a>
             </div>
           </div>
           
@@ -50,6 +51,7 @@ return (
       </div>
     </div>
   </section>
+  {/*Donate now Section*/}
   <section class="section2" id="donate">
     <div className="container">
       <div className="donate">
@@ -82,6 +84,7 @@ return (
     </div>
     
   </section>
+  {/*Our plan Section*/}
   <section class="section3" id="plan">
     <div className="container">
       <div class="plan-heading">
@@ -140,6 +143,7 @@ return (
     </div>
     </div>
   </section>
+  {/*Success Section*/}
   <section class="done container-fluid" id="success">
     <div className="done-elements">
       <div class="done-heading">
@@ -176,7 +180,7 @@ return (
       
     </div>
   </section>
-
+  {/*Gallary Section*/}
   <section className="gallary container pb-4" id="gallary">
     <div className="gallary-elements">
       <div class="gallary-heading">
@@ -223,7 +227,7 @@ return (
         </div>
     </div>
   </section>
-
+  {/*About Us Section*/}
   <section className="about container" id="about">
     <div className="about-elements">
       <div class="about-heading">
@@ -253,8 +257,8 @@ return (
     </section>
 
   
-
-    <section class="section6" id="faq">
+  {/*FAQ Section*/}
+  <section class="section6" id="faq">
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <div class="qs-elements d-flex justify-content-center align-items-center flex-column text-center pb-4">
         <h1 class="fw-bold">Frequently Asked Questions</h1>
@@ -328,7 +332,7 @@ return (
     </div>
   </section>
 
-
+{/*Contact Us Section*/}
 <section class="section7" id="contact">
     <div class="container">
      <div className="contact-elements text-light">

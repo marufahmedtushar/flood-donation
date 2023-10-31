@@ -4,7 +4,7 @@
 	scroll-behavior: smooth;
 }
 
-
+{/*************Home Section*************/}
 .section1 .container-fluid .carousel-item:before{
 
 	content:"";
@@ -34,15 +34,15 @@
 		padding: 0px 84px 0px 84px ;
 }
 .section1 .container-fluid .carousel-caption a{
-	margin-bottom: 50px;
-	text-decoration: none;
-	color: white;
-	background-color: #FF5959;
-	padding: 15px;
-	border-radius: 5px;
+		background: #FF5959;
+    color: #dddddd;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    width: 25%;
 }
 
-
+  {/*************Donate now Section*************/}
 
 .section2,.form,.section3,.section5,.section4{
 	display: flex;
@@ -70,11 +70,7 @@
 	color: #707070;
 padding: 0px 130px 0px 130px;
 }
-.update-details p,.need-details p{
-	text-align: center;
-	color: #707070;
-	
-}
+
 
 .block{
 	display: flex;
@@ -120,18 +116,24 @@ padding: 0px 130px 0px 130px;
 
 .button1{
 	text-decoration: none;
-	color: white;
-	background-color: #FF5959;
-	padding: 15px;
-	border-radius: 5px;	
+	background: #FF5959;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 15px;
+  width: 25%;
 	margin: 20px 10px 10px 10px;
+	text-align: center;
+}
+.button1:hover{
+	color: #ffffff;
 }
 
 .form{
 	margin-bottom: 100px;
 }
 
-
+  {/*************Our plan Section************/}
 
 .section3 .plan-heading h1{
 		font-size: 45px;
@@ -139,20 +141,6 @@ padding: 0px 130px 0px 130px;
     margin-bottom: 0;
 }
 
-.section4 .need-heading h1{
-	font-weight: bold;
-	font-size: 45px;
-	margin-bottom: 20px;
-	margin-top: 30px;
-}
-
-
-.section5 .update-heading h1{
-	font-weight: bold;
-	font-size: 45px;
-	margin-bottom: 0;
-	margin-top: 20px;
-}
 
 .plans{
 	display: flex;
@@ -196,35 +184,10 @@ background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(210,139,139,1) 0
 	background: rgb(252,252,252);
 background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(210,139,139,1) 0%, rgba(255,198,198,1) 100%);
 }
-.section5 .input1{
-background: rgb(238,174,202);
-background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-border-radius: 5px;
-width: 45%;
-padding: 50px;
-display: flex;
-justify-content: center;
-margin: 20px 40px 110px 40px;
-}
 
-.input1 input{
-	outline: none;
-	border-style: none;
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
-	background-color: #dddddd;
-}
 
-.section5 .input1 a{
-	background-color: #FF5959;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	padding: 10px;
-	border-bottom-right-radius:5px;
-	border-top-right-radius:5px;
-}
 
+ {/*************Success Section************/}
 
 
 .donate1{
@@ -301,6 +264,8 @@ color: #707070;
 	float: left;
 }
 
+
+ {/*************Gallary Section************/}
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
@@ -335,6 +300,7 @@ color: #707070;
     transition: transform 0.3s ease;
 }
 
+{/*************About Section************/}
 
 .about-heading h1{
 	font-size: 45px;
@@ -342,7 +308,7 @@ color: #707070;
 .about-details{
 	padding:24px 0px 24px 0px;
 }
-
+{/*************FAQ Section************/}
 
 .section6 {
 /*	padding-top: 10px !important;*/
@@ -361,6 +327,8 @@ padding-bottom: 120px;
 	text-align: center;
 	margin-top: 10px;
 }
+
+{/*************Contact Us************/}
 
 .section7{
 background: rgb(238,174,202);
@@ -426,6 +394,8 @@ width: 25%;
 }
 
 
+{/*************Footer************/}
+
 footer{
 	background-color: #0B0D17;
   display: flex;
@@ -482,9 +452,12 @@ footer p{
 
 
 @media only screen and (max-width: 320px){
+	{/*************Navbar************/}
 	.navbar .container-fluid{
 		padding: 0px!important;
 	}
+
+	{/*************Home Section************/}
 
 	.section1{
 		margin-top: 60px;
@@ -516,6 +489,9 @@ footer p{
 		height: 200px!important;
 		width: 100%!important;
 	}
+
+	{/*************Donate now Section************/}
+
 	.section2 .donate h1 {
 		margin-top: 0px!important;
 	}
@@ -543,13 +519,20 @@ footer p{
 	width: 100%;
 }
 
+.section2 .form .button1{
+	width: 100%;
+}
 
+{/*************Our plan Section************/}
 	.section3 .plan-details {
 		padding: 0px!important;
 	}
+
 	.plans div{
 		padding: 10px!important;
 	} 
+
+	{/*************Success Section************/}
 	.done{
 		padding: 0px!important;
 	}
@@ -579,6 +562,8 @@ footer p{
 		width: 170px;
 	}
 
+		{/*************Gallary Section************/}
+
 	.gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -587,6 +572,9 @@ footer p{
   .gallary-elements .gallary-details{
   	padding: 0px!important;
   }
+
+  	{/*************About Section************/}
+
 	.about .about-details{
 		padding: 0!important;
 	}
@@ -601,17 +589,18 @@ footer p{
 		border-radius: 0!important;
 	}
 
-
+	{/*************Contact Section************/}
 
 	.contact-main .contact-form .btn3 {
-		width: 35%;
+		width: 50%;
 	}
 	.contact-form input{
 		width: 100%;
 	}
 }
 
-	@media only screen and (max-width: 375px) and (min-width: 321px){
+@media only screen and (max-width: 375px) and (min-width: 321px){
+		{/*************Home Section************/}
 			.section1{
 		margin-top: 60px;
 	}
@@ -643,7 +632,7 @@ footer p{
 		height: 100%!important;
 		width: 100%!important;
 	}
-
+	{/*************Donate now Section************/}
 		.section2 .donate h1 {
 		margin-top: 0px!important;
 	}
@@ -671,12 +660,19 @@ footer p{
 	width: 100%;
 }
 
+.section2 .form .button1 {
+    width: 100%;
+}
+	{/*************Our plan Section************/}
+
 	.section3 .plan-details {
 		padding: 0px!important;
 	}
 	.plans div{
 		padding: 10px!important;
 	} 
+
+		{/*************Success Section************/}
 
 		.done{
 		padding: 0px!important;
@@ -707,6 +703,8 @@ footer p{
 		width: 170px;
 	}
 
+		{/*************Gallary Section************/}
+
 			.gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr)!important;
@@ -714,6 +712,8 @@ footer p{
    .gallary-elements .gallary-details{
   	padding: 0px!important;
   }
+
+  	{/*************About Section************/}
 
   	.about .about-details{
 		padding: 0!important;
@@ -728,7 +728,858 @@ footer p{
 	.about .card .row .col-md-6 img{
 		border-radius: 0!important;
 	}
+	{/*************Contact Section************/}
+
+		.contact-main .contact-form .btn3 {
+		width: 50%;
+	}
 
 
 
 	}
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+	{/*************Home Section************/}
+					.section1{
+		margin-top: 60px;
+	}
+
+			.section1 .carousel-caption{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column!important;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 18px;
+		margin-top: -300px;
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 11px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+	.section1 .carousel-item img{
+		height: 100%!important;
+		width: 100%!important;
+	}
+	{/*************Donate now Section************/}
+		.section2 .donate h1 {
+		margin-top: 0px!important;
+	}
+	.donate-details p {
+		padding: 0px!important;
+	}
+	.block{
+		display: inline;
+	}
+	
+	.section2 .block{
+		padding: 0px!important;
+	}
+	.block div{
+		margin: 15px!important;
+		width: inherit!important;
+		height: inherit!important;
+	}
+	.section2 .form{
+		margin-bottom: 0px!important;
+		padding: 0px!important;
+
+	}
+.section2 .form input{
+	width: 100%;
+}
+
+.section2 .form .button1 {
+    width: 100%;
+}
+	{/*************Our plan Section************/}
+
+	.section3 .plan-details {
+		padding: 0px!important;
+	}
+	.plans div{
+		padding: 10px!important;
+	} 
+		{/*************Success Section************/}
+
+		.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:425px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+		margin: 0px!important;
+	}
+	.done .done-accessories .boxes{
+		display: flex;
+		flex-direction: column!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+		{/*************Gallary Section************/}
+
+			.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)!important;
+  }
+   .gallary-elements .gallary-details{
+  	padding: 0px!important;
+  }
+	{/*************About Section************/}
+
+  	.about .about-details{
+		padding: 0!important;
+	}
+	.about .card .card-body{
+		padding-right: 0!important;
+		padding-left: 0!important;
+	}
+	.about .card .row .col-md-6{
+		padding: 0px!important;
+	}
+	.about .card .row .col-md-6 img{
+		border-radius: 0!important;
+	}
+	{/*************Contact Section************/}
+
+		.contact-main .contact-form .btn3 {
+		width: 50%;
+	}
+	}
+
+@media only screen and (max-width: 526px) and (min-width: 426px){
+		{/*************Home Section************/}
+							.section1{
+		margin-top: 60px;
+	}
+					.section1 .carousel-caption{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+			.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 25px;
+		margin-top: -250px;
+		
+	}
+		.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 10px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+	.section1 .carousel-item img{
+		height: 100%!important;
+		width: 100%!important;
+	}
+
+		{/*************Donate now Section************/}
+	.section2 .donate h1{
+		margin-top: 20px;
+	}
+		.section2 .block{
+			padding: 0px;
+		}
+		.section2 .donate-details p{
+			padding: 0px;
+		}
+		.section2 .form{
+			margin-bottom: 0px;
+			padding: 0px;
+		}
+
+		.section2 .form input{
+			width: 100%;
+		}
+		.section2 .form .button1{
+			width: 100%;
+		}
+
+			{/*************Our plan Section************/}
+
+		.plans{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr)!important;
+		}
+
+		.plans .col-md-4 #shelter,.plans .col-md-4 #food,.plans .col-md-4 #education{
+			padding: 10px;
+		}
+		.plans .col-md-4{
+			padding: 5px!important;
+		}
+
+			{/*************Success Section************/}
+				.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:770px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 100px 0px 150px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+
+		{/*************Gallary Section************/}
+
+		.gallery {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr)!important;
+  }
+  
+
+  	{/*************About Section************/}
+	.about .card .row .col-md-6 img{
+		border-radius: 0!important;
+	}
+
+  .about .card .col-lg-8{
+  	padding: 0px!important;
+  }
+
+	{/*************Contact Section************/}
+		.contact-main .contact-form .btn3 {
+			width: 50%;
+		}
+
+	}	
+@media only screen and (max-width: 767px) and (min-width: 527px){
+	{/*************Home Section************/}
+	.section1{
+		margin-top: 60px;
+	}
+	.section1 .carousel-caption{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 25px;
+		margin-top: -250px;
+		
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 15px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+	.section1 .carousel-item img{
+		height: 550px!important;
+		width: 100%!important;
+	}
+
+		{/*************Donate now Section************/}
+	.section2 .donate h1{
+		margin-top: 20px;
+	}
+		.section2 .block{
+			padding: 0px;
+		}
+		.section2 .donate-details p{
+			padding: 0px;
+		}
+		.section2 .form{
+			margin-bottom: 0px;
+			padding: 0px;
+		}
+		.section2 .form input{
+			width: 100%;
+		}
+		.section2 .form .button1{
+			width: 100%;
+		}
+	{/*************Our plan Section************/}
+		.plans{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr)!important;
+		}
+
+		.plans .col-md-4 #shelter,.plans .col-md-4 #food,.plans .col-md-4 #education{
+			padding: 10px;
+		}
+		.plans .col-md-4{
+			padding: 5px!important;
+		}
+
+			{/*************Success Section************/}
+				.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:770px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 120px 0px 150px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+
+		{/*************Gallary Section************/}
+
+		.gallery {
+    	display: grid;
+    	grid-template-columns: repeat(3, 1fr)!important;
+  }
+
+  	{/*************About Section************/}
+
+  #about .container{
+  	margin: 0px;
+  }
+  
+	.about .card .row .col-md-6 img{
+		border-radius: 0!important;
+	}
+
+  .about .card .col-lg-8{
+  	padding: 0px!important;
+  }
+
+	{/*************Cotact Section************/}
+		.contact-main .contact-form .btn3 {
+			width: 50%;
+		}
+
+	}	
+@media only screen and (max-width: 900px) and (min-width: 768px){
+		{/*************Home Section************/}
+			.section1{
+		margin-top: 60px;
+	}
+
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 40px;
+		margin-top: -120px;
+		
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 15px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+.section1 .carousel-item img{
+	height: 550px!important;
+	width: 100%!important;
+}
+	{/*************Donate now Section************/}
+.section2 .donate h1{
+	margin-top: 20px;
+}
+	.section2 .block{
+		padding: 0px;
+	}
+	.section2 .donate-details p{
+		padding: 0px;
+	}
+	.section2 .form{
+		margin-bottom: 0px;
+		padding: 0px;
+	}
+/*	.section2 .form input{
+		width: 100%;
+	}*/
+	.section2 .form .button1{
+		width: 35%;
+	}
+
+		{/*************our plan Section************/}
+
+.section3 .container .row .col-md-4{
+	padding: 10px;
+}
+	{/*************Success Section************/}
+				.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:900px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 180px 0px 160px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+	{/*************About Section************/}
+	.about .card .col-lg-8{
+		padding: 0px!important;
+	}
+
+	{/*************Cotact Section************/}
+	.contact-main .contact-form .btn3 {
+		width: 50%;
+	}
+
+	}
+@media only screen and (max-width: 1024px) and (min-width: 901px){
+		{/*************Home Section************/}
+			.section1{
+		margin-top: 60px;
+	}
+
+	.section1 .container-fluid .carousel-caption h1 {
+		padding: 5px!important;
+		font-size: 40px;
+		margin-top: -120px;
+		
+	}
+	.section1 .container-fluid .carousel-caption p{
+		padding: 0px!important;
+		width: 100%!important;
+		font-size: 15px;
+	}
+
+
+.section1 .container-fluid .carousel-caption a {
+	margin-bottom: 0px!important;
+	width: 100%;
+	padding: 2px!important;
+}
+.section1 .carousel-item img{
+	height: 550px!important;
+	width: 100%!important;
+}
+	{/*************Donate now Section************/}
+.section2 .donate h1{
+	margin-top: 20px;
+}
+	.section2 .block{
+		padding: 0px;
+	}
+	.section2 .donate-details p{
+		padding: 0px;
+	}
+	.section2 .form{
+		margin-bottom: 0px;
+		padding: 0px;
+	}
+/*	.section2 .form input{
+		width: 100%;
+	}*/
+	.section2 .form .button1{
+		width: 35%;
+	}
+		{/*************Our plan Section************/}
+
+.section3 .container .row .col-md-4{
+	padding: 10px;
+}
+
+	{/*************Success Section************/}
+				.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:1050px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 180px 0px 160px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 10px;
+		height: 90px;
+		width: 170px;
+	}
+	{/*************About Section************/}
+	.about .card .col-lg-8{
+		padding: 0px!important;
+	}
+	{/*************Contact Section************/}
+
+	.contact-main .contact-form .btn3 {
+		width: 50%;
+	}
+
+	}
+@media only screen and (max-width: 1280px) and (min-width: 1025px){
+		{/*************Home Section************/}
+  .section1{
+		margin-top: 60px;
+	}
+	.section1 .container-fluid .carousel-caption a {
+		width: 35%;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+    padding: 0px 5px 0px 5px;
+    font-size: 65px;
+}
+.section1 .carousel-item img{
+	height: 850px!important;
+	width: 100%!important;
+}
+	{/*************Donate now Section************/}
+.section2 .donate h1{
+	margin-top: 20px;
+}
+	.section2 .block{
+		padding: 0px;
+	}
+	.section2 .donate-details p{
+		padding: 0px;
+	}
+	.section2 .form{
+		margin-bottom: 100px;
+		padding: 0px;
+	}
+
+	.section2 .form .button1{
+		width: 35%;
+	}
+
+	{/*************Success Section************/}
+	.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:1250px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 180px 0px 160px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 35px;
+		height: 90px;
+		width: 170px;
+	}
+
+
+}
+@media only screen and (max-width: 1440px) and (min-width: 1281px){
+	{/*************Home Section************/}
+  .section1{
+		margin-top: 60px;
+	}
+	.section1 .container-fluid .carousel-caption a {
+		width: 35%;
+	}
+	.section1 .container-fluid .carousel-caption h1 {
+    padding: 0px 5px 0px 5px;
+    font-size: 65px;
+}
+.section1 .carousel-item img{
+	height: 850px!important;
+	width: 100%!important;
+}
+	{/*************Donate now Section************/}
+.section2 .donate h1{
+	margin-top: 20px;
+}
+	.section2 .block{
+		padding: 0px;
+	}
+	.section2 .donate-details p{
+		padding: 0px;
+	}
+	.section2 .form{
+		margin-bottom: 100px;
+		padding: 0px;
+	}
+
+	.section2 .form .button1{
+		width: 35%;
+	}
+
+	{/*************Success Section************/}
+	.done{
+		padding: 0px!important;
+	}
+	.done-elements .done-heading h1 {
+		margin-top: 0px!important;
+	}
+	.done img{
+		width:1440px!important;
+		height: 440px!important;
+		border-radius: 0px!important;
+		
+	}
+	.done-details p {
+		padding: 0px!important;
+	}
+	.done .done-accessories{
+    margin: 120px 0px 160px 0px;
+
+	}
+	.done .done-accessories .boxes{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr)!important;
+	}
+	.done .done-accessories .boxes div{
+		padding: 10px;
+		margin: 70px;
+		height: 90px;
+		width: 170px;
+	}
+
+
+}
+@media only screen and (max-width: 1752px) and (min-width: 1441px){
+		{/*************nav Section************/}
+	  nav{
+	  	font-size: 22px;
+	  }
+	  	{/*************Home Section************/}
+	  .section1{
+		margin-top: 60px;
+		font-size: 22px;
+		}
+/*		.section1 .container-fluid .carousel-caption h1 {
+		  padding: 0px 310px 0px 310px;
+		  font-size: 85px;
+		}
+			.section1 .container-fluid .carousel-caption p{
+		padding: 5px!important;
+		width: 100%!important;
+		font-size: 45px;
+	}*/
+		.section1 .container-fluid .carousel-caption a {
+		width: 45%;
+	}
+
+		{/*************Donate now Section************/}
+	.section2,.section3{
+		font-size: 22px;
+	}
+		{/*************Success Section************/}
+
+		.done{
+			padding: 0px!important;
+			font-size: 22px;
+		}
+		.done-elements .done-heading h1 {
+			margin-top: 0px!important;
+		}
+		.done img{
+			width:2560px!important;
+			height: 440px!important;
+			border-radius: 0px!important;
+			
+		}
+		.done-details p {
+			padding: 0px!important;
+		}
+		.done .done-accessories{
+	    margin: 90px 0px 160px 0px;
+
+		}
+		.done .done-accessories .boxes{
+				display: grid;
+				grid-template-columns: repeat(4, 1fr)!important;
+		}
+		.done .done-accessories .boxes div{
+			padding: 10px;
+			margin: 100px;
+			height: 90px;
+			width: 170px;
+		}
+			{/*************Gallary Section************/}
+
+
+		.gallary, .about,.section6, .section7, footer{
+			font-size: 22px;
+		}
+}
+@media only screen and (max-width: 2560px) and (min-width: 1753px){
+		{/*************Nav Section************/}
+	  nav{
+	  	font-size: 22px;
+	  }
+
+	{/*************Homw Section************/}
+
+	  .section1{
+		margin-top: 60px;
+		font-size: 22px;
+		}
+/*		.section1 .container-fluid .carousel-caption h1 {
+		  padding: 0px 310px 0px 310px;
+		  font-size: 85px;
+		}
+			.section1 .container-fluid .carousel-caption p{
+		padding: 5px!important;
+		width: 100%!important;
+		font-size: 45px;
+	}*/
+		.section1 .container-fluid .carousel-caption a {
+		width: 45%;
+	}
+	{/*************Donate now Section************/}
+
+	.section2,.section3{
+		font-size: 22px;
+	}
+
+		{/*************Success Section************/}
+
+		.done{
+			padding: 0px!important;
+			font-size: 22px;
+		}
+		.done-elements .done-heading h1 {
+			margin-top: 0px!important;
+		}
+		.done img{
+			width:2560px!important;
+			height: 440px!important;
+			border-radius: 0px!important;
+			
+		}
+		.done-details p {
+			padding: 0px!important;
+		}
+		.done .done-accessories{
+	    margin: 90px 0px 160px 0px;
+
+		}
+		.done .done-accessories .boxes{
+				display: grid;
+				grid-template-columns: repeat(4, 1fr)!important;
+		}
+		.done .done-accessories .boxes div{
+			padding: 10px;
+			margin: 120px;
+			height: 90px;
+			width: 170px;
+		}
+
+
+			{/*************Gallary Section************/}
+
+
+		.gallary, .about,.section6, .section7, footer{
+			font-size: 22px;
+		}
+}
